@@ -73,7 +73,7 @@ export const getOneProfile = async (req, res) => {
         }
         res.status(200).json({
             success: true,
-            message: `Found ${oneProfile.name}'s profile found successfully`,
+            message: `${oneProfile.name}'s profile found successfully`,
             data: oneProfile
         })
     } catch (error) {
