@@ -96,7 +96,7 @@ export const updateProfile = async (req, res) => {
         const profileId = req.params.id
 
         // Update profile
-        const updateProfile = await profile.findByIdAndUpdate(profileId, req.body, { new: true })
+        const updateProfile = await profile.findByIdAndUpdate(profileId, req.body, { returnDocument: "after" })
 
         if (!updateProfile) {
             return res.status(404).json({
