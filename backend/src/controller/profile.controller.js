@@ -122,4 +122,33 @@ export const updateProfile = async (req, res) => {
 
 
 // Delete Profile
+export const deleteProfile = async (req, res) => {
 
+    try {
+
+        // Grab ID of the profile
+        const profileId = req.params.id
+
+        // Delete profile
+        const deleteProfile = await profile.findByIdAndDelete(profileId)
+
+        if (!deleteProfile) {
+            return res.status(404).json({
+                success: false,
+                message: `Failed to delete ${deleteProfile.name}'s profile`
+            })
+        }
+
+        res.status(200).json({
+            success: true,
+            message: "Successfully deleted user profile"
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: error.message
+        })
+    }
+
+}
