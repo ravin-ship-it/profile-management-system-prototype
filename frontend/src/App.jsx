@@ -1,17 +1,18 @@
-import CreateProfile from './components/CreateProfile.jsx'
-import LandingPage from './components/LandingPage.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage.jsx";
+import CreateProfilePage from "./pages/CreateProfilePage.jsx";
+import AllProfilePages from "./pages/AllProfilePage.jsx";
 
-function App() {
+const App = () => {
+
     return (
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path='/' element={<LandingPage />} />
-                    <Route path='/create' element={<CreateProfile />} />
-                </Routes>
-            </BrowserRouter>
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/create" element={<CreateProfilePage />} />
+                <Route path="/profiles" element={<AllProfilePages />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
