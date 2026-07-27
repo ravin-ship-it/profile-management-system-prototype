@@ -3,6 +3,7 @@ import LandingPage from "./pages/LandingPage.jsx";
 import CreateProfilePage from "./pages/CreateProfilePage.jsx";
 import AllProfilePages from "./pages/AllProfilePage.jsx";
 import OneProfilePage from "./pages/OneProfilePage.jsx";
+import EditProfilePage from "./pages/EditProfilePage.jsx";
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
                 <Route path="/create" element={<CreateProfilePage />} />
                 <Route path="/profiles" element={<AllProfilePages />} />
                 <Route path="/:id" element={<OneProfilePage />} />
+                <Route path="/:id/edit" element={<EditProfilePage />} />
             </Routes>
         </BrowserRouter>
     )

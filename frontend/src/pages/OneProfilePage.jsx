@@ -67,11 +67,15 @@ const OneProfilePage = () => {
         navigate("/create")
     }
 
+    // Go to edit page
+    const goToEditPage = () => {
+        navigate(`/${id}/edit`)
+    }
+
     // Go to Profiles page
     const goToAllProfilePage = () => {
         navigate("/profiles")
     }
-
 
     // Loading Spinner
     if (!profile) {
@@ -105,7 +109,7 @@ const OneProfilePage = () => {
                 </div>
                 <div className="flex gap-8 items-center justify-center">
                     <Button value={"home"} color={"bg-orange-600"} action={goTOLandingPage} />
-                    <Button value={"edit profile"} color={"bg-pink-900"} />
+                    <Button value={"edit profile"} color={"bg-pink-900"} action={goToEditPage} />
                     <Button value={"create profile"} color={"bg-green-800"} action={goToCreateProfilePage} />
                     <Button value={"view profiles"} color={"bg-cyan-700"} action={goToAllProfilePage} />
                     <Button value={"delete profile"} color={"bg-red-500"} action={handleDelete} />
