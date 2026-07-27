@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import ProfileAPI from "../api/profile.api.js"
+import LoadingSpinner from "../components/LoadingSpinner.jsx"
 import bgAllProfile from "../assets/scenery2.png"
 import profilePic from "../assets/xen.png"
 
 const AllProfilePages = () => {
 
     // Variable for storing list of profiles
-    const [profiles, setProfiles] = useState([])
+    const [profiles, setProfiles] = useState(null)
 
     useEffect(() => {
 
@@ -31,8 +32,12 @@ const AllProfilePages = () => {
 
     }, []) // this empty array at the last telly react to fetch the profiles only once 
 
+    if (!profiles) {
+        return <LoadingSpinner />
+    }
+
     return (
-        <div className="p-8 min-h-screen w-full grid grid-cols-3 gap-8" style={{ background: `linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)) no-repeat center center, url(${bgAllProfile}) no-repeat center / cover fixed` }}>
+        <div className="p-8 min-h-screen w-full grid grid-cols-3 gap-8 content-start" style={{ background: `linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)) no-repeat center center, url(${bgAllProfile}) no-repeat center / cover fixed` }}>
             {profiles.map((profile) => (
 
                 <Link to={`/${profile._id}`} className="group block h-full w-full content-center border-[2px] border-solid border-black/50 rounded-2xl bg-[rgba(0,0,0,0.7)] hover:bg-[#002633bf] backdrop-blur-sm hover:scale-105 hover:text-shadow-[0_0_4px_cyan] hover:border-cyan-300 transition-all duration-300 ease-in-out">

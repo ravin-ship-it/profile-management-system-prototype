@@ -31,7 +31,7 @@ const CreateProfilePage = () => {
             if (result.success) {
                 const newId = result.data._id
                 alert(`${formData.name}'s profile created successfully`)
-                navigate(`/profile/${newId}`)
+                navigate(`/${newId}`)
             } else {
                 alert("Error : " + result.message)
             }

@@ -1,0 +1,16 @@
+const LoadingSpinner = () => {
+    return (
+        <div className="h-screen w-full flex flex-col gap-8 items-center justify-center bg-black shadow-[0_0_10px_cyan]">
+            <div className="h-32 w-32 flex items-center justify-center animate-bounce bg-black border-4 border-cyan-500 ">
+                <div className="h-[50%] w-[50%] flex items-center justify-center animate-ping bg-black border-4 border-cyan-500 ">
+                    <div className="h-[50%] w-[50%] flex items-center justify-center animate-ping bg-black border-4 border-cyan-500 ">
+                        <div className="h-[50%] w-[50%] flex items-center justify-center animate-ping bg-black border-4 border-cyan-500 "></div>
+                    </div>
+                </div>
+            </div>
+            <div className="italic text-3xl text-cyan-500">Loading...</div>
+        </div>
+    )
+}
+
+export default LoadingSpinner
