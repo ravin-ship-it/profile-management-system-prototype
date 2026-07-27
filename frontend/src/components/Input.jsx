@@ -5,7 +5,7 @@ const Input = ({ id, label, type = "text", value, onChange }) => {
         <div className="flex gap-4 text-gray-200">
             <label
                 htmlFor={id}
-                className="px-8 py-4 block grow text-2xl text-center rounded-sm hover:outline hover:outline-pink-500 bg-[#ff149333] border border-pink-600">
+                className="px-8 py-4 block grow text-2xl text-center rounded-sm hover:outline hover:outline-pink-500 hover:drop-shadow-[0_0_20px_#ff00bfcc] bg-[#ff149333] border border-pink-600">
                 {label}
             </label>
             <input
@@ -14,7 +14,7 @@ const Input = ({ id, label, type = "text", value, onChange }) => {
                 value={value}
                 onChange={onChange}
                 placeholder={`Enter your ${label.toLowerCase()}`}
-                className="w-[80%] px-8 py-4 text-2xl rounded-sm hover:outline hover:outline-cyan-500 focus:outline-cyan-500 bg-[#0086e633] border border-cyan-600" />
+                className="w-[80%] px-8 py-4 text-2xl rounded-sm hover:outline hover:outline-cyan-500 focus:outline-cyan-500 hover:drop-shadow-[0_0_20px_#0015ffd9] bg-[#0086e633] border border-cyan-600" />
         </div>
     )
 
