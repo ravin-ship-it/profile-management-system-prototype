@@ -55,7 +55,7 @@ const AllProfilePages = () => {
                             <div className="min-w-0 grow">
                                 <h2 className="text-2xl md:text-3xl grow truncate text-white/90">{profile.name}</h2>
                                 <p className="md:text-2xl grow truncate text-white/70">{profile.email}</p>
-                                <p className="px-4 grow truncate absolute right-0 top-0 text-6xl md:text-8xl text-white/30">{profile.age}</p>
+                                <p className="px-4 grow truncate absolute -right-2 md:right-0 top-0 text-6xl md:text-8xl text-white/30">{profile.age}</p>
                             </div>
                         </div>
                     </Link>
