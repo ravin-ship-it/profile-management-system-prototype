@@ -24,7 +24,8 @@ const OneProfilePage = () => {
                 if (result.success) {
                     setProfile(result.data)
                 } else {
-                    console.error(error)
+                    alert("This profile does not exist!")
+                    navigate("/profiles")
                 }
             } catch (error) {
                 console.log(error.message)
