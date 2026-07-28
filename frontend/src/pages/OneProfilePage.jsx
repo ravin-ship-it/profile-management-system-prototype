@@ -35,7 +35,7 @@ const OneProfilePage = () => {
 
         // Fetch the profile
         fetchOneProfile()
-    }, [id])
+    })
 
 
     // DeleteFunction
@@ -84,15 +84,17 @@ const OneProfilePage = () => {
     }
 
     return (
-        <div className="h-screen w-full p-16 grid gap-8 content-center justify-items-center" style={{ background: `url(${bgOneProfile}) no-repeat center / cover fixed` }}>
+        <div className="w-full py-8 px-4 grid gap-8 content-start justify-items-center" style={{ background: `url(${bgOneProfile}) no-repeat center / cover fixed` }}>
             <section className="p-8 w-[90%] flex gap-8 justify-between backdrop-blur-sm text-white/80 bg-black/20 border-4 rounded-l-4xl border-t-pink-500 border-l-pink-500 border-b-cyan-500 border-r-cyan-500">
-                <div className="flex flex-col gap-4 grow">
+                <div className="flex flex-col gap-4 grow border border-pink-500">
                     <h1 className="w-max pb-4 text-8xl font-bold bg-linear-30 from-pink-600 to-cyan-500 text-transparent bg-clip-text">{profile.name}</h1>
                     <p className="text-6xl">Email: {profile.email}</p>
                     <p className="text-5xl">Age: {profile.age}</p>
                     <p className="text-4xl">Bio: {profile.bio}</p>
                 </div>
-                <img src={profilePic} alt="Profile Pic" className="h-80 w-[20rem] rounded-s-sm" />
+                <div className="aspect-square">
+                    <img src={profilePic} alt="Profile Pic" className="h-80 w-[20rem] block rounded-s-sm" />
+                </div>
             </section>
 
             <section className="p-8 w-[90%] flex flex-col gap-8 backdrop-blur-sm bg-black/30 text-white border-4 rounded-4xl border-t-pink-500 border-l-pink-500 border-b-cyan-500 border-r-cyan-500">

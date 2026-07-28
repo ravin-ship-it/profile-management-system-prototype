@@ -22,7 +22,7 @@ const AllProfilePages = () => {
                 if (result.success) {
                     setProfiles(result.data)
                 } else {
-                    console.error(error)
+                    console.log(result.message)
                 }
             } catch (error) {
                 console.log("Backend error : " + error)
@@ -46,7 +46,7 @@ const AllProfilePages = () => {
             </div>
 
 
-            <main className="p-8 w-full grid grid-cols-3 gap-8 content-start">
+            <main className="p-8 w-full grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-8 content-start">
                 {profiles.map((profile) => (
 
                     <Link to={`/${profile._id}`} className="group block h-full w-full content-center border-[2px] border-solid border-black/50 rounded-2xl bg-[rgba(0,0,0,0.7)] hover:bg-[#002633bf] backdrop-blur-sm hover:scale-105 hover:text-shadow-[0_0_4px_cyan] hover:border-cyan-300 active:scale-95 transition-all duration-300 ease-in-out">
