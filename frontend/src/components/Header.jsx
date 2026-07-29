@@ -3,7 +3,7 @@ import logo from "../assets/logo.png"
 
 const Header = () => {
     return (
-        <header className="w-full flex items-center justify-between bg-black/90">
+        <header className="w-full flex items-center justify-between fixed top-0 z-10 bg-black/90 border border-b-pink-500">
             <Link to="/" className="h-24 w-60 block relative right-4 md:right-0 hover:scale-105 active:scale-95 overflow-clip transition-transform">
                 <img src={logo} alt="Profile Hub" className="w-full object-[0_-26px] hover:drop-shadow-[0_0_8px_#ff3399b3] transition-transform" />
             </Link>

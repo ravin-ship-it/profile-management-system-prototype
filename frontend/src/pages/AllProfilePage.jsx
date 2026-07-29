@@ -38,7 +38,7 @@ const AllProfilePages = () => {
     }
 
     return (
-        <div className="min-h-screen w-full grid grid-cols-1 grid-rows-[auto_1fr] content-center" style={{ background: `linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)) no-repeat center center, url(${bgAllProfile}) no-repeat center / cover fixed` }}>
+        <div className="min-h-screen w-full scroll-smooth grid grid-cols-1 grid-rows-[auto_1fr] content-center" style={{ background: `linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)) no-repeat center center, url(${bgAllProfile}) no-repeat center / cover fixed` }}>
 
             {/** Header */}
             <div>
@@ -46,7 +46,7 @@ const AllProfilePages = () => {
             </div>
 
 
-            <main className="p-4 md:p-8 w-full grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-4 md:gap-8 content-start">
+            <main className="p-4 md:p-8 w-full mt-24 grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-4 md:gap-8 content-start">
                 {profiles.map((profile) => (
 
                     <Link to={`/${profile._id}`} className="group block h-full w-full content-center border-[2px] border-solid border-black/50 rounded-2xl bg-[rgba(0,0,0,0.7)] hover:bg-[#002633bf] backdrop-blur-sm hover:scale-105 hover:text-shadow-[0_0_4px_cyan] hover:border-cyan-300 active:scale-95 transition-all duration-300 ease-in-out">
