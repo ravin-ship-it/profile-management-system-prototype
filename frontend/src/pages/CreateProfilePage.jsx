@@ -43,19 +43,21 @@ const CreateProfilePage = () => {
     }
 
     return (
-        <div className="grid content-center justify-items-center min-h-screen w-full p-8" style={{ background: `url(${bgImageProfiles}) no-repeat center / cover fixed` }}>
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-16 w-[65%] rounded-2xl border border-[rgba(255,255,255,0.3)] bg-[rgba(255,255,255,0.05)] backdrop-blur-xs">
-                <div className="flex items-center justify-between relative w-full mb-6">
-                    <Link to="/" className="h-20 w-[40%] flex items-center justify-center relative overflow-clip -left-12">
-                        <img src={logo} alt="Profile Hub" className="h-auto w-auto absolute -top-16 object-cover drop-shadow-[0_0_10px_#ff00bf80]" />
+        <div className="flex items-center justify-center min-h-screen w-full md:p-8" style={{ background: `url(${bgImageProfiles}) no-repeat center / cover fixed` }}>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6 md:gap-4 p-8 md:p-16 w-[90%] md:w-[65%] rounded-2xl border border-[rgba(255,255,255,0.3)] bg-[rgba(255,255,255,0.05)] backdrop-blur-xs">
+                <div className="flex items-center justify-between relative w-full md:mb-6">
+                    <Link to="/" className="border border-pink-600 h-20 w-[70%] md:w-[40%] flex items-center justify-center relative overflow-clip -left-6 md:-left-14">
+                        <img src={logo} alt="Profile Hub" className="border border-cyan-600 h-auto w-auto absolute left-1 md:left-6 -top-5 md:-top-16 scale-116 object-cover drop-shadow-[0_0_10px_#ff00bf80]" />
                     </Link>
-                    <h1 className="text-3xl font-bold capitalize text-cyan-200">identity.</h1>
+                    <h1 className="md:text-3xl font-bold capitalize text-cyan-300">identity.</h1>
                 </div>
+        <hr className="border border-1 border-pink-500" />
+                <label className="text-white text-2xl text-center">Create your profile</label>
                 <Input id="name" label="Name" type="text" value={formData.name} onChange={handleChange} />
                 <Input id="email" label="Email" type="email" value={formData.email} onChange={handleChange} />
                 <Input id="age" label="Age" type="number" value={formData.age} onChange={handleChange} />
                 <Input id="bio" label="Bio" type="text" value={formData.bio} onChange={handleChange} />
-                <button type="submit" className="py-4 grow text-2xl rounded-sm bg-[rgba(0,0,0,0.2)] hover:bg-[rgba(0,0,0,0.5)] block text-white border border-gray-500 hover:border-white capitalize transition-all duration-300 ease-in-out">submit</button>
+                <button type="submit" className="py-2 md:py-4 grow text-1xl md:text-2xl rounded-sm bg-[rgba(0,0,0,0.2)] hover:bg-[rgba(0,0,0,0.5)] block text-white border border-gray-500 hover:border-white capitalize transition-all duration-300 ease-in-out">submit</button>
             </form >
         </div >
     )
