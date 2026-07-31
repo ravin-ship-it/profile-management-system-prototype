@@ -84,7 +84,7 @@ const OneProfilePage = () => {
     }
 
     return (
-        <div className="min-h-screen w-full p-4 md:py-8 md:px-4 grid gap-4 md:gap-8 content-start md:justify-items-center" style={{ background: `url(${bgOneProfile}) no-repeat center / cover fixed` }}>
+        <div className="min-h-screen w-full p-4 md:py-8 md:px-4 grid gap-4 md:gap-8 content-center md:justify-items-center" style={{ background: `url(${bgOneProfile}) no-repeat center / cover fixed` }}>
             <section className="p-4 md:p-8 md:w-[90%] flex flex-col-reverse items-center justify-end md:flex-row gap-4 md:gap-8 backdrop-blur-sm text-white/80 bg-black/20 border-4 rounded-2xl md:rounded-l-4xl border-t-pink-500 border-l-pink-500 border-b-cyan-500 border-r-cyan-500">
                 <div className="flex flex-col items-center justify-center md:gap-4 grow">
                     <h1 className="w-fit pb-2 md:pb-4 text-3xl md:text-8xl text-center font-bold bg-linear-30 from-pink-600 to-cyan-500 text-transparent bg-clip-text">{profile.name}</h1>
@@ -93,7 +93,7 @@ const OneProfilePage = () => {
                     <p className="text-1xl md:text-4xl">Bio: {profile.bio}</p>
                 </div>
                 <div className="w-full md:w-auto flex items-center justify-center self-start aspect-square border border-cyan-500">
-                    <img src={profilePic} alt="Profile Pic" className="border border-pink-500 size-full md:size-96 aspect-square block rounded-s-sm" />
+                    <img src={profilePic} alt="Profile Pic" className="border border-pink-500 w-full md:size-96 block rounded-s-sm" />
                 </div>
             </section>
 
