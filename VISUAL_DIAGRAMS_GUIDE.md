@@ -1,28 +1,5 @@
 # Profile Management System - Visual Diagrams Guide
 
-This document provides instructions on how to convert the flowcharts and diagrams into professional images using free online tools.
-
----
-
-## 📊 How to Create Professional Diagrams
-
-### **Option 1: Using Draw.io (RECOMMENDED - FREE)**
-
-1. Go to: https://draw.io/
-2. Click "Create New Diagram"
-3. Choose blank canvas
-4. Copy the ASCII diagram content below and use it as reference
-5. Recreate using shapes, arrows, and text
-6. Download as PNG, SVG, or PDF
-
-### **Option 2: Using Lucidchart (FREE TIER)**
-
-1. Go to: https://www.lucidchart.com/
-2. Sign up for free account
-3. Create new diagram
-4. Use pre-built flowchart shapes
-5. Download as PNG/SVG
-
 ### **Option 3: Using Mermaid (EMBEDDED)**
 
 Mermaid diagrams render directly in GitHub and Markdown!
@@ -389,49 +366,3 @@ sequenceDiagram
 | **Kroki.io** | https://kroki.io/ | Export diagrams as images |
 | **Lucidchart** | https://www.lucidchart.com/ | Professional flowcharts |
 | **Figma** | https://www.figma.com/ | Design tool |
-
----
-
-## 📋 Recommended Diagram Selection for Report
-
-**For Academic/College Report:**
-- ✅ Mermaid diagrams (professional, clean)
-- ✅ Technology Stack diagram
-- ✅ CRUD Operations flow
-- ✅ Frontend User Flow
-- ✅ API Architecture
-
-**For Professional Report:**
-- ✅ Export Mermaid as PNG/SVG
-- ✅ High-quality images
-- ✅ Add to PowerPoint presentation
-- ✅ Include in PDF report
-
----
-
-## ✨ Tips for Best Results
-
-1. **Mermaid Diagrams:**
-   - Use https://mermaid.live/ for preview
-   - Download at 2x resolution for clarity
-   - PNG format works best for reports
-
-2. **Draw.io Diagrams:**
-   - Adjust colors to match theme
-   - Use consistent font sizes
-   - Export as 300 DPI PNG for print
-
-3. **Report Integration:**
-   - Add captions below diagrams
-   - Reference in text
-   - Use consistent sizing
-   - Maintain aspect ratios
-
----
-
-**Next Steps:**
-1. Choose your preferred tool
-2. Copy the Mermaid code above
-3. Generate professional diagrams
-4. Add to your report
-5. Done! ✅
