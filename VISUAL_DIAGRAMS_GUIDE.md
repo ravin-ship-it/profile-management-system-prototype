@@ -1,9 +1,5 @@
 # Profile Management System - Visual Diagrams Guide
 
-### **Option 3: Using Mermaid (EMBEDDED)**
-
-Mermaid diagrams render directly in GitHub and Markdown!
-
 ---
 
 ## 🎨 Mermaid Diagram Code
