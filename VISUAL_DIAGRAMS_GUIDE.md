@@ -1,7 +1,5 @@
 # Profile Management System - Visual Diagrams Guide
 
----
-
 ## 🎨 Mermaid Diagram Code
 
 Here are the diagrams converted to **Mermaid format** that you can use directly:
